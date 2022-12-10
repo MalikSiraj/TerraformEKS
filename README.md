@@ -22,8 +22,8 @@ After running this command you will see that it creates 56 resource in your AWS 
 ### `terraform apply`
 The [command](https://developer.hashicorp.com/terraform/cli/commands/apply) command executes the actions proposed in a Terraform plan
 
-Once it is deployed, run 
-`aws eks --region $(terraform output -raw region) update-kubeconfig \`
+Once it is deployed, run <br />
+`aws eks --region $(terraform output -raw region) update-kubeconfig \` <br />
     `--name $(terraform output -raw cluster_name)`
 
 command to configure `kubectl` command to communicate with your cluster 
