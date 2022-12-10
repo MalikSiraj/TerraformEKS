@@ -2,9 +2,9 @@ This project contains Terraform code for kubernetes cluster deployment in AWS cl
 
 The pre-requiste are 
 
-1- install [Terrafrom](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
-2- install [AWS cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-3- install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
+1- install [Terrafrom](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) <br />
+2- install [AWS cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) <br />
+3- install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/) <br />
 
 ## Available Scripts
 
