@@ -16,7 +16,9 @@ module "eks" {
     # Disabling and using externally provided security groups
     create_security_group = false
   }
-
+  node_security_group_tags = {
+    "kubernetes.io/cluster/${local.cluster_name}" = null
+  }
   eks_managed_node_groups = {
     one = {
       name = "node-group-1"
@@ -41,8 +43,8 @@ module "eks" {
 
       instance_types = ["t3.medium"]
 
-      min_size     = 1
-      max_size     = 2
+      min_size     = 2
+      max_size     = 4
       desired_size = 1
 
       pre_bootstrap_user_data = <<-EOT

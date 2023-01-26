@@ -10,7 +10,7 @@ provider "aws" {
 data "aws_availability_zones" "available" {}
 
 locals {
-  cluster_name = "Teraform-eks-${random_string.suffix.result}"
+  cluster_name = "Tf-eks-musketeers-cluster"
 }
 
 resource "random_string" "suffix" {
